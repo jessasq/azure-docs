@@ -16,7 +16,7 @@ ms.author: thwimmer
 
 # Tutorial: Configure Vonage for automatic user provisioning
 
-This tutorial describes the steps you need to perform in both Vonage and Azure Active Directory (Azure AD) to configure automatic user provisioning. When configured, Azure AD automatically provisions and de-provisions users and groups to [Vonage](https://www.vonage.com/) using the Azure AD Provisioning service. For important details on what this service does, how it works, and frequently asked questions, see [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](../app-provisioning/user-provisioning.md). 
+This tutorial describes the steps you need to perform in both Vonage and Azure Active Directory (Azure AD) to configure automatic user provisioning. When configured, Azure AD automatically provisions and de-provisions users to [Vonage](https://www.vonage.com/) using the Azure AD Provisioning service. For important details on what this service does, how it works, and frequently asked questions, see [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](../app-provisioning/user-provisioning.md). 
 
 
 ## Capabilities Supported
@@ -110,6 +110,9 @@ This section guides you through the steps to configure the Azure AD provisioning
 1. Select **Save**.
 
 1. In the **Mappings** section, select **Synchronize Azure Active Directory Users to Vonage**.
+
+   > [!NOTE]
+   > The Vonage provisioning app does not support group syncrhonization.
 
 1. Review the user attributes that are synchronized from Azure AD to Vonage in the **Attribute-Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Vonage for update operations. If you choose to change the [matching target attribute](../app-provisioning/customize-application-attributes.md), you will need to ensure that the Vonage API supports filtering users based on that attribute. Select the **Save** button to commit any changes.
 
